@@ -62,8 +62,20 @@
     
     cell.textLabel.text = item.itemName;
     
+    if(item.completed){
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }else{
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UoMTask *item = [self.toDoItems objectAtIndex:indexPath.row];
+    item.completed = !item.completed;
+    [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
 }
 
 
