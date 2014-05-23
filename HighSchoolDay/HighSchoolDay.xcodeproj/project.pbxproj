@@ -21,6 +21,8 @@
 		16ABEBEE192ED4D600E87DF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16ABEBD0192ED4D600E87DF7 /* UIKit.framework */; };
 		16ABEBF6192ED4D600E87DF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 16ABEBF4192ED4D600E87DF7 /* InfoPlist.strings */; };
 		16ABEBF8192ED4D600E87DF7 /* HighSchoolDayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ABEBF7192ED4D600E87DF7 /* HighSchoolDayTests.m */; };
+		16ABEC03192ED83F00E87DF7 /* UoMAddNewTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ABEC02192ED83F00E87DF7 /* UoMAddNewTaskViewController.m */; };
+		16ABEC06192ED8E300E87DF7 /* UoMToDoList.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ABEC05192ED8E300E87DF7 /* UoMToDoList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		16ABEBF3192ED4D600E87DF7 /* HighSchoolDayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HighSchoolDayTests-Info.plist"; sourceTree = "<group>"; };
 		16ABEBF5192ED4D600E87DF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		16ABEBF7192ED4D600E87DF7 /* HighSchoolDayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HighSchoolDayTests.m; sourceTree = "<group>"; };
+		16ABEC01192ED83F00E87DF7 /* UoMAddNewTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UoMAddNewTaskViewController.h; sourceTree = "<group>"; };
+		16ABEC02192ED83F00E87DF7 /* UoMAddNewTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UoMAddNewTaskViewController.m; sourceTree = "<group>"; };
+		16ABEC04192ED8E300E87DF7 /* UoMToDoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UoMToDoList.h; sourceTree = "<group>"; };
+		16ABEC05192ED8E300E87DF7 /* UoMToDoList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UoMToDoList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,10 @@
 				16ABEBDB192ED4D600E87DF7 /* UoMAppDelegate.h */,
 				16ABEBDC192ED4D600E87DF7 /* UoMAppDelegate.m */,
 				16ABEBDE192ED4D600E87DF7 /* Main.storyboard */,
+				16ABEC04192ED8E300E87DF7 /* UoMToDoList.h */,
+				16ABEC05192ED8E300E87DF7 /* UoMToDoList.m */,
+				16ABEC01192ED83F00E87DF7 /* UoMAddNewTaskViewController.h */,
+				16ABEC02192ED83F00E87DF7 /* UoMAddNewTaskViewController.m */,
 				16ABEBE1192ED4D600E87DF7 /* UoMViewController.h */,
 				16ABEBE2192ED4D600E87DF7 /* UoMViewController.m */,
 				16ABEBE4192ED4D600E87DF7 /* Images.xcassets */,
@@ -251,7 +261,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				16ABEBE3192ED4D600E87DF7 /* UoMViewController.m in Sources */,
+				16ABEC06192ED8E300E87DF7 /* UoMToDoList.m in Sources */,
 				16ABEBDD192ED4D600E87DF7 /* UoMAppDelegate.m in Sources */,
+				16ABEC03192ED83F00E87DF7 /* UoMAddNewTaskViewController.m in Sources */,
 				16ABEBD9192ED4D600E87DF7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
