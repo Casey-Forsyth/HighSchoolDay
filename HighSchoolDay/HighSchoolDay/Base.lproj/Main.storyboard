@@ -27,7 +27,13 @@
                             <outlet property="delegate" destination="Rr1-TR-Dbg" id="vxd-4h-pWT"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My To Do List" id="NaQ-ra-CnR"/>
+                    <navigationItem key="navigationItem" title="My To Do List" id="NaQ-ra-CnR">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="jaz-mF-f6k">
+                            <connections>
+                                <segue destination="vXZ-lx-hvc" kind="modal" id="Tmn-1G-lLe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UhD-AO-yRw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,6 +57,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0xM-ob-dRK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Add a new To Do item" id="uft-An-hMk">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="5oj-2R-SWT"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Done" id="W5R-8w-w7l"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
