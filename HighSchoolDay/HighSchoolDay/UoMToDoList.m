@@ -7,6 +7,7 @@
 //
 
 #import "UoMToDoList.h"
+#import "UoMAddNewTaskViewController.h"
 #import "UoMTask.h"
 
 @interface UoMToDoList ()
@@ -127,6 +128,16 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(IBAction)unwindToList:(UIStoryboardSegue *)segue
+{
+    UoMAddNewTaskViewController *source = [segue sourceViewController];
+    UoMTask *item = source.toDoItem;
+    if(item !=nil){
+        [self.toDoItems addObject:item];
+        [self.tableView reloadData];
+    }
+}
 
 
 - (void)loadInitialData {

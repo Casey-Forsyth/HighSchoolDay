@@ -51,10 +51,12 @@
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if(sender !=self.doneButton){
-        self.toDoItem = [[UoMTask alloc] init];
-        self.toDoItem.itemName = self.textField.text;
-        self.toDoItem.completed = NO;
+        return;
     }
+    self.toDoItem = [[UoMTask alloc] init];
+    self.toDoItem.itemName = self.textField.text;
+    self.toDoItem.completed = NO;
+    
     
 }
 

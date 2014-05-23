@@ -73,12 +73,12 @@
                                     <navigationItem title="Add a new To Do item" id="uft-An-hMk">
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="5oj-2R-SWT">
                                             <connections>
-                                                <segue destination="bdW-TV-kfk" kind="unwind" unwindAction="unwindToList:" id="S18-TV-Gtn"/>
+                                                <segue destination="bdW-TV-kfk" kind="unwind" unwindAction="unwindToList:" id="ETb-KU-6Bd"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Done" id="W5R-8w-w7l">
                                             <connections>
-                                                <segue destination="bdW-TV-kfk" kind="unwind" unwindAction="unwindToList:" id="6Dw-r4-Pso"/>
+                                                <segue destination="bdW-TV-kfk" kind="unwind" unwindAction="unwindToList:" id="CDN-F5-IXf"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
