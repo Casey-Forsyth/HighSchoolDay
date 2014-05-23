@@ -87,6 +87,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="doneButton" destination="W5R-8w-w7l" id="1fY-Jv-9aL"/>
+                        <outlet property="textField" destination="9IK-Dp-2xZ" id="s7m-li-dur"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <exit id="bdW-TV-kfk" userLabel="Exit" sceneMemberID="exit"/>

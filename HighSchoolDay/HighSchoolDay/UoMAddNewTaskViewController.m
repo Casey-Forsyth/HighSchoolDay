@@ -7,8 +7,10 @@
 //
 
 #import "UoMAddNewTaskViewController.h"
-
+#import "UoMTask.h"
 @interface UoMAddNewTaskViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;
 
 @end
 
@@ -45,5 +47,15 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if(sender !=self.doneButton){
+        self.toDoItem = [[UoMTask alloc] init];
+        self.toDoItem.itemName = self.textField.text;
+        self.toDoItem.completed = NO;
+    }
+    
+}
 
 @end

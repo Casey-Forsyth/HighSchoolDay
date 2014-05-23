@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "UoMTask.h"
 @interface UoMAddNewTaskViewController : UIViewController
+
+@property UoMTask *toDoItem;
 
 @end
