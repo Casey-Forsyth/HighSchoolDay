@@ -380,6 +380,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HighSchoolDay/HighSchoolDay-Prefix.pch";
 				INFOPLIST_FILE = "HighSchoolDay/HighSchoolDay-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,6 +394,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HighSchoolDay/HighSchoolDay-Prefix.pch";
 				INFOPLIST_FILE = "HighSchoolDay/HighSchoolDay-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -457,6 +459,7 @@
 				16ABEBFD192ED4D600E87DF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16ABEBFE192ED4D600E87DF7 /* Build configuration list for PBXNativeTarget "HighSchoolDayTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +468,7 @@
 				16ABEC00192ED4D600E87DF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
