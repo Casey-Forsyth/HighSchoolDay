@@ -7,6 +7,7 @@
 //
 
 #import "UoMToDoList.h"
+#import "UoMTask.h"
 
 @interface UoMToDoList ()
 
@@ -27,6 +28,7 @@
 {
     [super viewDidLoad];
     self.toDoItems = [[NSMutableArray alloc] init];
+    [self loadInitialData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -110,5 +112,21 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+- (void)loadInitialData {
+    UoMTask *item1 = [[UoMTask alloc] init];
+    item1.itemName = @"Buy milk";
+    [self.toDoItems addObject:item1];
+    UoMTask *item2 = [[UoMTask alloc] init];
+    item2.itemName = @"Buy eggs";
+    [self.toDoItems addObject:item2];
+    UoMTask *item3 = [[UoMTask alloc] init];
+    item3.itemName = @"Read a book";
+    [self.toDoItems addObject:item3];
+}
+
+
+
 
 @end
